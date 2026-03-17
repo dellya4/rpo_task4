@@ -5,8 +5,11 @@ import payment.PaymentProcessor;
 import payment.CreditCardPayment;
 
 public class testCreditCard {
+
     @Test
-    PaymentProcessor processor = new PaymentProcessor();
-    processor.setStrategy(new CreditCardPayment());
-    processor.processPayment(1200);
+    public void testCreditCardPayment(){
+        PaymentProcessor processor = new PaymentProcessor();
+        processor.setStrategy(new CreditCardPayment());
+        processor.processPayment(1200);
+    }
 }
